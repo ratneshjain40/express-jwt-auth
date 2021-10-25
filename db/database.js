@@ -5,7 +5,7 @@ require('dotenv').config();
 const conn = process.env.DB_STRING;
 
 const connection = mongoose.createConnection(conn, {
-    dbName: process.env.COSMOSDB_DBNAME,
+    dbName: process.env.DBNAME,
     useNewUrlParser: true,
     useUnifiedTopology: true
 });

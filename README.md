@@ -1,19 +1,20 @@
-## How to use this Repo
+# About
+This is a boilerplate repo for express js auth with JWT Tokens and Passport JS local strategy
 
-This repo has two branches:
+## Setup
+Populate these fields in .env file, in project root
 
-* master
-* final
+```env
+DB_STRING=<YOUR CONNECTION STRING>
+DBNAME = <DB NAME>
+SECRET= <SECRET STRING>
+```
 
-The `master` branch has a starter template for creating what is in the `final` branch.
+<br>
 
-There is an Angular app included, but is entirely optional.  Since JWT authentication is commonly seen in SPAs (single page applications) like Angular, I decided it was important to at least have a basic implementation.
+Install npm dependencies
+```jsx
+npm run start
+```
 
-## How to run the app
-
-When you go to each branch, the `README.md` will show you how to start the app.
-
-The `master` branch is incomplete and you can follow the written or video tutorials to complete:
-
-* Written - https://www.zachgollwitzer.com/posts/2020/passport-js/
-* Video - https://www.youtube.com/playlist?list=PLYQSCk-qyTW2ewJ05f_GKHtTIzjynDgjK
+> JWT is retuned in the response of "register" and "login" endpoints

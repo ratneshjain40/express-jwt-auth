@@ -21,9 +21,11 @@ function genPassword(password) {
     };
 }
 
+// Issued JWTs are Signed with private keys and then in passport js local strategy we validate them with pulic key
 function issueJWT(user) {
   const _id = user._id;
 
+  // The time the token is valid for
   const expiresIn = '1d';
 
   const payload = {
